@@ -1,0 +1,34 @@
+/* src/components/SideDrawer.css */
+
+.side-drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200; /* Ensure it's above the backdrop */
+  height: 100vh;
+  width: 70%;
+  max-width: 300px; /* Optional: Limit the maximum width */
+  background: white;
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:focus {
+  outline: 2px solid #ff0055;
+}
+
+.main-navigation__drawer-nav {
+  margin-top: 2rem;
+}
